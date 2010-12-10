@@ -1,7 +1,7 @@
 Summary:	A smaller, cheaper, faster SED implementation
 Name:		minised
 Version:	1.13
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL
 Group:		File tools
 URL:		http://www.exactcode.de/site/open_source/minised/
