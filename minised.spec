@@ -40,3 +40,17 @@ rm -rf %{buildroot}
 %{_bindir}/minised
 %{_mandir}/man1/minised.1*
 
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 1.13-2mdv2011.0
++ Revision: 620364
+- the mass rebuild of 2010.0 packages
+
+* Mon Oct 12 2009 Oden Eriksson <oeriksson@mandriva.com> 1.13-1mdv2010.0
++ Revision: 456943
+- import minised
+
+
+* Mon Oct 12 2009 Oden Eriksson <oeriksson@mandriva.com> 1.13-1mdv2009.1
+- initial mandriva package
