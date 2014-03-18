@@ -1,0 +1,29 @@
+diff -urN minised-1.14/sedexec.c minised-1.14-patched/sedexec.c
+--- minised-1.14/sedexec.c	2013-02-14 21:05:23.000000000 +1100
++++ minised-1.14-patched/sedexec.c	2014-03-19 01:57:52.981423766 +1100
+@@ -488,14 +488,14 @@
+ 		}
+ 		*sp++ = c & 0177;
+ 		if (sp >= genbuf + MAXBUF)
+-			fprintf(stderr, LTLMSG);
++			fprintf(stderr, "%s", LTLMSG);
+ 
+ 	}
+ 	lp = loc2;
+ 	loc2 = sp - genbuf + linebuf;
+ 	while ((*sp++ = *lp++))
+ 		if (sp >= genbuf + MAXBUF)
+-			fprintf(stderr, LTLMSG);
++			fprintf(stderr, "%s", LTLMSG);
+ 	lp = linebuf; sp = genbuf;
+ 	while ((*lp++ = *sp++));
+ 	spend = lp-1;
+@@ -508,7 +508,7 @@
+ 	{
+ 		*asp++ = *al1++;
+ 		if (asp >= genbuf + MAXBUF)
+-			fprintf(stderr, LTLMSG);
++			fprintf(stderr, "%s", LTLMSG);
+ 	}
+ 	return(asp);
+ }
