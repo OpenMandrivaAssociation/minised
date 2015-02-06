@@ -1,7 +1,7 @@
 Summary:	A smaller, cheaper, faster SED implementation
 Name:		minised
 Version:	1.14
-Release:	1
+Release:	2
 License:	BSD
 Group:		File tools
 Url:		http://www.exactcode.de/site/open_source/minised/
