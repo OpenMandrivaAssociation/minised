@@ -7,6 +7,7 @@ Group:		File tools
 Url:		https://www.exactcode.de/site/open_source/minised/
 Source0:	http://dl.exactcode.de/oss/minised/%{name}-%{version}.tar.gz
 Patch0:		minised-1.14-sfmt.patch
+BuildRequires:	make
 BuildRequires:	dietlibc-devel
 
 %description
